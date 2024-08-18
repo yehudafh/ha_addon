@@ -6,7 +6,7 @@ This add-on allows you to monitor and maintain your pool's chemical levels direc
 
 | Option | Description | Default |
 |--------|-------------|---------|
-| `pool_volume_liters` | The volume of the pool in liters | 50000 |
+| `pool_volume_liters` | The volume of the pool in liters | 10000 |
 | `pool_type` | The type of pool (chlorine/salt) | chlorine |
 
 ## Installation

@@ -13,7 +13,7 @@
       "startup": "application",
       "boot": "auto",
       "options": {
-        "pool_volume_liters": 50000,
+        "pool_volume_liters": 10000,
         "pool_type": "chlorine"
       },
       "schema": {
