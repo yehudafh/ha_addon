@@ -1,0 +1,24 @@
+{
+  "en": {
+    "free_chlorine": "Free Chlorine",
+    "total_chlorine": "Total Chlorine",
+    "combined_chlorine": "Combined Chlorine",
+    "cya_level": "Cyanuric Acid Level",
+    "pool_recommendations": "Pool Recommendations",
+    "add_chlorine": "Add {amount} ml of chlorine",
+    "add_acid": "Add {amount} grams of soda ash",
+    "add_soda_ash": "Add {amount} ml of hydrochloric acid",
+    "refresh_water": "Consider refreshing the water due to: {reasons}"
+  },
+  "he": {
+    "free_chlorine": "כלור חופשי",
+    "total_chlorine": "כלור כולל",
+    "combined_chlorine": "כלור קשור",
+    "cya_level": "רמת חומצה ציאנורית",
+    "pool_recommendations": "המלצות לבריכה",
+    "add_chlorine": "הוסף {amount} מ\"ל כלור",
+    "add_acid": "הוסף {amount} גרם סודה אש",
+    "add_soda_ash": "הוסף {amount} מ\"ל חומצת מלח",
+    "refresh_water": "שקול לרענן את המים בגלל: {reasons}"
+  }
+}

@@ -7,12 +7,27 @@
   "startup": "application",
   "boot": "auto",
   "options": {
-    "pool_volume_liters": 10000,
-    "pool_type": "chlorine"
+    "pool_volume_liters": 50000,
+    "pool_type": "chlorine",
+    "sensor_ph": "",
+    "sensor_temp": "",
+    "sensor_ec": "",
+    "sensor_orp": "",
+    "sensor_salinity": "",
+    "sensor_tds": ""
   },
   "schema": {
     "pool_volume_liters": "int",
-    "pool_type": "str"
+    "pool_type": {
+      "type": "select",
+      "options": ["chlorine", "salt"]
+    },
+    "sensor_ph": "str",
+    "sensor_temp": "str",
+    "sensor_ec": "str",
+    "sensor_orp": "str",
+    "sensor_salinity": "str",
+    "sensor_tds": "str"
   },
   "ports": {},
   "environment": {},
