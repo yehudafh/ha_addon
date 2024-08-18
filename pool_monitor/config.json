@@ -21,7 +21,7 @@
     "pool_volume": "int",
     "pool_type": {
       "type": "str",
-      "options": ["chlorine", "salt"]
+      "match": "^(chlorine|salt)$"
     },
     "sensor_ph": "str",
     "sensor_temp": "str",
@@ -31,7 +31,7 @@
     "sensor_tds": "str",
     "language": {
       "type": "str",
-      "options": ["en", "he"]
+      "match": "^(en|he)$"
     }
   }
 }
