@@ -1,0 +1,21 @@
+{
+  "name": "Pool Monitor",
+  "version": "1.0",
+  "slug": "pool_monitor",
+  "description": "An add-on to monitor and maintain your pool's chemical levels.",
+  "arch": ["amd64", "armv7", "armhf"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {
+    "pool_volume_liters": 10000,
+    "pool_type": "chlorine"
+  },
+  "schema": {
+    "pool_volume_liters": "int",
+    "pool_type": "str"
+  },
+  "ports": {},
+  "environment": {},
+  "map": ["config:rw"],
+  "host_network": false
+}
