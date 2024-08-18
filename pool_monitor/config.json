@@ -1,6 +1,6 @@
 {
   "name": "Pool Monitor",
-  "version": "1.0",
+  "version": "1.0.0",
   "slug": "pool_monitor",
   "description": "An add-on to monitor and maintain your pool's chemical levels.",
   "arch": ["amd64", "armv7", "armhf"],
