@@ -5,7 +5,6 @@ FROM alpine:3.14
 WORKDIR /usr/src/app
 
 # Copy the add-on files to the container
-COPY data/ /usr/src/app/
 COPY config/ /etc/pool_monitor/
 
 # Install any dependencies
