@@ -1,4 +1,6 @@
 {
+  "pool_volume": 10000,
+  "pool_type": "chlorine",
   "sensor_ph": "sensor.ph_sensor",
   "sensor_temp": "sensor.pool_metrics_temperature",
   "sensor_ec": "sensor.pool_ec",

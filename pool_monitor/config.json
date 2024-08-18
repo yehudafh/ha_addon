@@ -1,36 +1,46 @@
 {
   "name": "Pool Monitor",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "slug": "pool_monitor",
-  "description": "An add-on to monitor and maintain your pool's chemical levels.",
-  "arch": ["amd64", "armv7", "armhf"],
-  "startup": "application",
+  "description": "Monitor and manage pool parameters",
+  "startup": "services",
   "boot": "auto",
+  "host_network": false,
   "options": {
-    "pool_volume_liters": 10000,
+    "pool_volume": 10000,
     "pool_type": "chlorine",
-    "sensor_ph": "",
-    "sensor_temp": "",
-    "sensor_ec": "",
-    "sensor_orp": "",
-    "sensor_salinity": "",
-    "sensor_tds": ""
+    "sensor_ph": "sensor.ph_sensor",
+    "sensor_temp": "sensor.pool_metrics_temperature",
+    "sensor_ec": "sensor.pool_ec",
+    "sensor_orp": "sensor.orp",
+    "sensor_salinity": "sensor.salinity",
+    "sensor_tds": "sensor.tds",
+    "language": "en"
   },
   "schema": {
-    "pool_volume_liters": "int",
-    "pool_type": {
-      "type": "select",
-      "options": ["chlorine", "salt"]
-    },
+    "pool_volume": "int",
+    "pool_type": "select",
     "sensor_ph": "str",
     "sensor_temp": "str",
     "sensor_ec": "str",
     "sensor_orp": "str",
     "sensor_salinity": "str",
-    "sensor_tds": "str"
+    "sensor_tds": "str",
+    "language": "select"
   },
-  "ports": {},
-  "environment": {},
-  "map": ["config:rw"],
-  "host_network": false
+  "select": {
+    "pool_type": ["chlorine", "salt"],
+    "language": ["en", "he"]
+  },
+  "labels": {
+    "pool_volume": "Pool Volume (liters)",
+    "pool_type": "Pool Type",
+    "sensor_ph": "pH Sensor",
+    "sensor_temp": "Temperature Sensor",
+    "sensor_ec": "EC Sensor",
+    "sensor_orp": "ORP Sensor",
+    "sensor_salinity": "Salinity Sensor",
+    "sensor_tds": "TDS Sensor",
+    "language": "Language"
+  }
 }
