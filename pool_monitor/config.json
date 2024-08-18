@@ -19,14 +19,14 @@
   },
   "schema": {
     "pool_volume": "int",
-    "pool_type": "select",
+    "pool_type": "str",
     "sensor_ph": "str",
     "sensor_temp": "str",
     "sensor_ec": "str",
     "sensor_orp": "str",
     "sensor_salinity": "str",
     "sensor_tds": "str",
-    "language": "select"
+    "language": "str"
   },
   "select": {
     "pool_type": ["chlorine", "salt"],
