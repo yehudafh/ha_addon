@@ -19,28 +19,19 @@
   },
   "schema": {
     "pool_volume": "int",
-    "pool_type": "str",
+    "pool_type": {
+      "type": "str",
+      "options": ["chlorine", "salt"]
+    },
     "sensor_ph": "str",
     "sensor_temp": "str",
     "sensor_ec": "str",
     "sensor_orp": "str",
     "sensor_salinity": "str",
     "sensor_tds": "str",
-    "language": "str"
-  },
-  "select": {
-    "pool_type": ["chlorine", "salt"],
-    "language": ["en", "he"]
-  },
-  "labels": {
-    "pool_volume": "Pool Volume (liters)",
-    "pool_type": "Pool Type",
-    "sensor_ph": "pH Sensor",
-    "sensor_temp": "Temperature Sensor",
-    "sensor_ec": "EC Sensor",
-    "sensor_orp": "ORP Sensor",
-    "sensor_salinity": "Salinity Sensor",
-    "sensor_tds": "TDS Sensor",
-    "language": "Language"
+    "language": {
+      "type": "str",
+      "options": ["en", "he"]
+    }
   }
 }
