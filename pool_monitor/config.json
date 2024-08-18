@@ -1,13 +1,13 @@
 {
   "name": "Pool Monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "slug": "pool_monitor",
   "description": "An add-on to monitor and maintain your pool's chemical levels.",
   "arch": ["amd64", "armv7", "armhf"],
   "startup": "application",
   "boot": "auto",
   "options": {
-    "pool_volume_liters": 50000,
+    "pool_volume_liters": 10000,
     "pool_type": "chlorine",
     "sensor_ph": "",
     "sensor_temp": "",

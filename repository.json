@@ -1,6 +1,6 @@
 {
-  "name": "Pool Add-ons",
-  "url": "https://github.com/yehudafh/ha_pool_monitor_addon",
+  "name": "Yehuda Add-ons",
+  "url": "https://github.com/yehudafh/ha_addon",
   "maintainer": "Yehuda Fahima",
   "email": "yehudafh@gmail.com",
   "addons": [
@@ -8,7 +8,7 @@
       "name": "Pool Monitor",
       "slug": "pool_monitor",
       "description": "An add-on to monitor and maintain your pool's chemical levels.",
-      "url": "https://github.com/yehudafh/ha_pool_monitor_addon/pool_monitor",
+      "url": "https://github.com/yehudafh/ha_addon/pool_monitor",
       "arch": ["amd64", "armv7", "armhf"],
       "startup": "application",
       "boot": "auto",
@@ -20,7 +20,7 @@
         "pool_volume_liters": "int",
         "pool_type": "str"
       },
-      "version": "1.0"
+      "version": "1.0.1"
     }
   ]
 }
