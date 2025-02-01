@@ -1,0 +1,15 @@
+{
+  "name": "OpenWRT Add-on",
+  "version": "1.0.0",
+  "slug": "openwrt",
+  "description": "Run OpenWRT as an add-on inside Home Assistant",
+  "startup": "system",
+  "boot": "auto",
+  "host_network": true,
+  "privileged": ["NET_ADMIN", "SYS_ADMIN"],
+  "map": ["config:rw"],
+  "options": {},
+  "schema": {},
+  "image": "openwrt/rootfs",
+  "arch": ["amd64", "armv7", "aarch64"]
+}

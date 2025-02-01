@@ -5,6 +5,20 @@
   "email": "yehudafh@gmail.com",
   "addons": [
     {
+      "name": "OpenWRT Add-on",
+      "slug": "openwrt",
+      "version": "1.0.0",
+      "url": "https://github.com/yehudafh/ha_addon/openwrt",
+      "arch": ["amd64", "armv7", "aarch64"],
+      "startup": "system",
+      "boot": "auto",
+      "host_network": true,
+      "privileged": ["NET_ADMIN", "SYS_ADMIN"],
+      "map": ["config:rw"],
+      "options": {},
+      "schema": {}
+    },
+    {
       "name": "Pool Monitor",
       "slug": "pool_monitor",
       "description": "An add-on to monitor and maintain your pool's chemical levels.",
