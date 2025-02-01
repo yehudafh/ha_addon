@@ -7,7 +7,7 @@
     {
       "name": "OpenWRT Add-on",
       "slug": "openwrt",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "url": "https://github.com/yehudafh/ha_addon/openwrt",
       "arch": ["amd64", "armv7", "aarch64"],
       "startup": "system",
